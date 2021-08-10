@@ -529,28 +529,7 @@ html(lang='ru-RU')
 									.science-competence__btn.btn.btn-primary.btn-primary--light(href="#") Оцени свои компетенции
 							.col-lg-7.d-flex.align-items-center.justify-content-center
 								.diagram__result
-									+b.diagram-block--sm
-										<canvas id="canvas"></canvas>
-										
-										div
-											mixin item(t, id)
-												.diagram-block-item.diagram-block-item--js(data-tab= id)
-													.diagram-block-item__title!= t
-											+item(`Лидерство`,'tab-1')
-											+item(`Научное творчество`,'tab-2')
-											+item(`Саморазвитие и&nbsp;профессиональный рост`,'tab-3')
-											+item(`Управление в&nbsp;научной сфере`,'tab-10')
-											+item(`Научно-технологическое предпринимательство`,'tab-9')
-											+item(`Научная <br> экспертиза`,'tab-8')
-											+item(`Научное наставничество&nbsp;/ подготовка научных и&nbsp;научно-педагогических кадров`,'tab-7')
-											//- //
-											+item(`Взаимодействие с&nbsp;деловым сообществом и&nbsp;институтами публичной власти`,'tab-6')
-											+item(`Социальная ответственность и&nbsp;взаимодействие с&nbsp;обществом`,'tab-5')
-											+item(`Научная кооперация и&nbsp;коммуникация`,'tab-4')
-											//- //
-											+item(`Исследовательский опыт и&nbsp;профессиональные знания`,'tab-11')
-											+item(`Реализация жизненного цикла научного продукта (ЖЦНП)`,'tab-12')
-													//- .diagram-block-item-toltip
+									img.res-i(src="img/diagrame.svg", alt="")
 
 				.container
 					.science-year
