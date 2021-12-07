@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $output-bourbon-deprecation-warnings: false;
 // @import "mq";
 @import "bourbon/app/assets/stylesheets/bourbon";
@@ -591,7 +593,7 @@ $primary: #4396f7;
 	font-size: 12px;
 	width: 170px;
 	min-height: 57px;
-	line-height: (14 / 12);
+	line-height: math.div(14, 12);
 	cursor: pointer;
 	@include mt;
 }
@@ -804,7 +806,7 @@ $primary: #4396f7;
 		position: relative;
 		top: -10px;
 		font-size: 24px;
-		line-height: (29 / 24);
+		line-height: math.div(29, 24);
 		color: #000000;
 		padding-bottom: 10px;
 	}
@@ -821,7 +823,7 @@ $primary: #4396f7;
 	&__list-item {
 		font-weight: normal;
 		font-size: 14px;
-		line-height: (17 / 14);
+		line-height: math.div(17, 14);
 		&:not(:last-child) {
 			padding-bottom: 9.2px;
 		}
@@ -830,7 +832,7 @@ $primary: #4396f7;
 		display: inline-block;
 		font-weight: bold;
 		font-size: 12px;
-		line-height: (14 / 12);
+		line-height: math.div(14, 12);
 		width: 21px;
 		color: $primary;
 	}
@@ -892,7 +894,7 @@ $primary: #4396f7;
 		display: block;
 		font-weight: bold;
 		font-size: 18px;
-		line-height: (26 / 18);
+		line-height: math.div(26, 18);
 		text-transform: uppercase;
 		text-decoration-line: underline;
 		height: 75px;
@@ -910,7 +912,7 @@ $primary: #4396f7;
 	&__tooltip {
 		position: relative;
 		font-weight: normal;
-		line-height: (25 / 14);
+		line-height: math.div(25, 14);
 		padding-left: 32px;
 		margin-bottom: 25px;
 		max-width: 1000px;
@@ -951,7 +953,7 @@ $primary: #4396f7;
 	&__title {
 		font-weight: normal;
 		font-size: 24px;
-		line-height: (29 / 24);
+		line-height: math.div(29, 24);
 		color: #000000;
 		margin-bottom: 25px;
 	}
@@ -988,7 +990,7 @@ $primary: #4396f7;
 	}
 	p {
 		max-width: 1000px;
-		line-height: (25 / 14);
+		line-height: math.div(25, 14);
 	}
 }
 
@@ -999,7 +1001,7 @@ $primary: #4396f7;
 	&__title {
 		font-weight: normal;
 		font-size: 24px;
-		line-height: (29 / 24);
+		line-height: math.div(29, 24);
 		color: #000000;
 		margin-bottom: 30px;
 	}
@@ -1010,7 +1012,7 @@ $primary: #4396f7;
 	}
 	li {
 		position: relative;
-		line-height: (25 / 14);
+		line-height: math.div(25, 14);
 		// padding-left: 48px;
 		margin-bottom: 10px !important;
 		color: #2b2b2b;
@@ -1022,7 +1024,7 @@ $primary: #4396f7;
 			left: 0;
 			font-weight: bold;
 			font-size: 20px;
-			line-height: (24 / 24);
+			line-height: math.div(24, 24);
 			color: #000;
 		}
 	}
@@ -1095,7 +1097,7 @@ $primary: #4396f7;
 	}
 	&__btn {
 		font-size: rem(18);
-		line-height: (24 / 20);
+		line-height: (24 * 0.05);
 		font-weight: normal;
 		color: #ffffff;
 		padding: rem(15.5);
@@ -1123,7 +1125,7 @@ $primary: #4396f7;
 	}
 	.diagram-block-item__title {
 		font-size: rem(11.4084);
-		line-height: (14 / 11.4084);
+		line-height: math.div(14, 11.4084);
 		display: flex;
 		align-items: center;
 		justify-content: center;

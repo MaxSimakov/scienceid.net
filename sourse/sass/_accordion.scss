@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .accordion-item {
   .accordion-item {
   
@@ -317,7 +319,7 @@
     [scope="row"] {
       font-weight: normal;
       font-size: 14px;
-      line-height: (25 / 14);
+      line-height: math.div(25, 14);
       color: #2b2b2b;
       padding: 24px 24px 24px 0 !important;
     }
