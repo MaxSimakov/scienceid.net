@@ -125,7 +125,7 @@ function styles() {
         // .pipe(postcss(processors, { syntax: syntax }))
         .pipe(postcss(processors, { syntax: pscss }))
         // .pipe(gcmq())
-        .pipe(rename({ suffix: '.min', prefix: '' }))
+        // .pipe(rename({ suffix: '.min', prefix: '' }))
         .pipe(dest(publicPath + '/css'))
         .pipe(browserSync.stream());
 

@@ -429,6 +429,14 @@ $primary: #4396f7;
 }
 
 .diagram-block {
+	text-align: center;
+	svg{
+		margin-left: auto;
+		margin-right: auto;
+		// height: var(--ell);
+		width: calc(var(--ell));
+		height: auto;
+	}
 	--ellX: translateX(calc(-1 * (var(--ell) - 40px) / 2));
 	&--sm {
 		--ell: 360px;
