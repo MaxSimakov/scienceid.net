@@ -499,7 +499,7 @@ $primary: #4396f7;
 		}
 	}
 
-	@for $i from 1 through 12 {
+	@for $i from 1 through 6 {
 		&:nth-child(#{$i}) {
 			transform: rotate(calc(var(--degStart) + var(--degStep) * #{$i})) var(--ellX);
 			.diagram-block-item__title,
@@ -509,6 +509,23 @@ $primary: #4396f7;
 			}
 		}
 	}
+	
+	&:nth-child(n + 7) {
+
+		--degStart: 105deg;
+	}
+	@for $i from 7 through 12 {
+		&:nth-child(#{$i}) {
+			transform: rotate(calc(-1 * (var(--degStart) + var(--degStep) * #{$i}))) var(--ellX);
+			.diagram-block-item__title,
+			.diagram-block-item-toltip,
+			.diagram-block-item__count {
+				transform: rotate(calc(1 * (var(--degStart) + var(--degStep) * #{$i})));
+			}
+		}
+	}
+
+
 	&__count{
 		text-align: center;
 	}
