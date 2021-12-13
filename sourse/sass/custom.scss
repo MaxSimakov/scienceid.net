@@ -423,7 +423,7 @@ $primary: #4396f7;
 
 	@media (max-width: 767.98px) {
 	}
-	--degStart: 105deg;
+	--degStart: 45deg;
 	--degStep: 30deg;
 	--step: 1;
 }
@@ -503,10 +503,14 @@ $primary: #4396f7;
 		&:nth-child(#{$i}) {
 			transform: rotate(calc(var(--degStart) + var(--degStep) * #{$i})) var(--ellX);
 			.diagram-block-item__title,
-			.diagram-block-item-toltip {
+			.diagram-block-item-toltip,
+			.diagram-block-item__count {
 				transform: rotate(calc(-1 * (var(--degStart) + var(--degStep) * #{$i})));
 			}
 		}
+	}
+	&__count{
+		text-align: center;
 	}
 	&:hover,
 	&.active {
@@ -580,8 +584,8 @@ $primary: #4396f7;
 	}
 	&:nth-child(11) {
 		.diagram-block-item__title {
-			top: 24px;
-			right: 36px;
+			// top: 24px;
+			// right: 36px;
 		}
 	}
 	&:nth-child(12) {
