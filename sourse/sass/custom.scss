@@ -499,7 +499,7 @@ $primary: #4396f7;
 		}
 	}
 
-	@for $i from 1 through 5 {
+	@for $i from 1 through 6 {
 		&:nth-child(#{$i}) {
 			transform: rotate(calc(var(--degStart) + var(--degStep) * #{$i})) var(--ellX);
 			.diagram-block-item__title,
@@ -541,8 +541,12 @@ $primary: #4396f7;
 	}
 	&:nth-child(1) {
 		.diagram-block-item__title {
-			top: -86px;
-			left: -200px;
+			// top: -86px;
+			// left: -200px;
+			// left: -188px;
+			// top: 17px;
+			left: -195px;
+    top: 13px;
 		}
 	}
 	&:nth-child(2) {
@@ -553,32 +557,38 @@ $primary: #4396f7;
 	}
 	&:nth-child(3) {
 		.diagram-block-item__title {
-			top: 6px;
-			left: -197px;
+			// top: 6px;
+			// left: -197px;
+			left: -194px;
+			top: -62px;
 		}
 	}
 	&:nth-child(4) {
 		.diagram-block-item__title {
-			top: 53px;
-			left: -184px;
+			left: -198px;
+			top: -26px;
 		}
 	}
 	&:nth-child(5) {
 		.diagram-block-item__title {
-			top: 53px;
-			right: 11px;
+			// top: 53px;
+			// right: 11px;
+			right: 46px;
+			top: -7px;
 		}
 	}
 	&:nth-child(6) {
 		.diagram-block-item__title {
-			top: -52px;
-			right: 1px;
+			// top: -52px;
+			// right: 1px;
+			right: 55px;
+				top: 32px;
 		}
 	}
 	&:nth-child(7) {
 		.diagram-block-item__title {
-			top: -103px;
 			right: 58px;
+			top: -12px;
 		}
 	}
 	&:nth-child(8) {
@@ -589,26 +599,30 @@ $primary: #4396f7;
 	}
 	&:nth-child(9) {
 		.diagram-block-item__title {
-			top: -31px;
-			right: 45px;
+			right: 66px;
+			top: -80px;
 		}
 	}
 	&:nth-child(10) {
 		.diagram-block-item__title {
-			top: 34px;
-			right: 36px;
+			// right: 36px;
+			// top: -61px;
+			right: 39px;
+			top: -64px;
 		}
 	}
 	&:nth-child(11) {
 		.diagram-block-item__title {
-			// top: 24px;
-			// right: 36px;
+			right: 35px;
+			top: 16px;
 		}
 	}
 	&:nth-child(12) {
 		.diagram-block-item__title {
-			top: -50px;
-			right: 30px;
+			// right: 51px;
+			// top: 14px;
+			right: 51px;
+			top: 24px;
 		}
 	}
 }
@@ -625,6 +639,9 @@ $primary: #4396f7;
 	line-height: math.div(14, 12);
 	cursor: pointer;
 	@include mt;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .diagram-block-item-toltip {
